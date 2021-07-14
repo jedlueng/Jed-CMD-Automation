@@ -3,7 +3,10 @@
 #Goal: Type {JCW.py} {Name} to get to the right browser and right webpage 
 
 #Use sys.arge for cmd
+#Use Sherbang Line to run python automatically 
+#Use webbrowser module 
 
 Browser = ''
 Page = ''
+url = ""
 
