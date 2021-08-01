@@ -6,20 +6,29 @@
 #Use Sherbang Line to run python automatically 
 #Use webbrowser module 
 
-import webbrowser
+
+#! /usr/bin/env python3
+
+import webbrowser, pyperclip, sys
 
 chrome = webbrowser.get("open -a /Applications/Chrome.app %s")
 brave =  webbrowser.get("open -a /Applications/Brave.app %s")
 Firefox = webbrowser.get("open -a /Applications/Developer.app %s")
 Safari = webbrowser.get("open -a /Applications/Safari.app %s")
 
-def open (page):
-    if page == 'brave':
-        webbrowser.get(using='').open_new('') #open page in a browser you like  
-    elif page == 'firefox': 
-        webbrowser.get(using='').open_new('') #Open firefox + page 
-    elif page == 'chrome': 
-        webbrowser.get(using='').open_new('') #chrome + page 
+
+if len(sys.argv) > 1: 
+    #Get address from command line 
+    site = ' '.join(sys.argv[1:])
+else:
+    #Get address from clipboard 
+    site = pyperclip.paste()
+
+def open (a):
+    if site == 'coinmarketcap': 
+        brave.open_new('https://coinmarketcap.com/')
     else: 
-        webbrowser.get(using='none').open_new('') #Use default browser and search that url. 
+        print(None)
+
+
 
