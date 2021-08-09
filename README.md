@@ -2,7 +2,7 @@
 Open a webpage from terminal
 
 
-# To use
+To use
 
 - Put the file in the directorya
 - call the file with python3 (you can use shebang line) to automatically run it
@@ -11,7 +11,7 @@ Open a webpage from terminal
       {chmod +x filename} on terminal 
     - type alias(that you set) for the website that you want
  
-# To add  
+To add  
 You can add your favourite site here in the code 
 
 
@@ -19,7 +19,7 @@ elif site == {favourite_site}:
 	{favourite-browser-variable}.open_new('url') 
   
  
-# Example 
+Example 
 On terminal 
 ./web.py 
 
@@ -31,7 +31,7 @@ coin #This will open a coinmarketcap site
 
 
 
-# Creator
+Creator
 
 Jedsada Luengaramsuk 
 
